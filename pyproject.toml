@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flask-forumulate"
+version = "0.1.0"
+description = "Forumulate comments, docs search and changelog as Jinja globals for Flask, plus cached content helpers."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+dependencies = ["Flask>=2.0"]
+classifiers = [
+  "Framework :: Flask",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+]
+
+[project.optional-dependencies]
+markdown = ["Markdown>=3.4"]
+
+[project.urls]
+Homepage = "https://forumulate.com/guides"
+Source = "https://github.com/forumulate/flask"
+
+[tool.setuptools.packages.find]
+include = ["flask_forumulate*"]
